@@ -1,0 +1,6 @@
+.responsive-image {
+    height: 80vh; /* 80% da altura do viewport */
+    width: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço em branco abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}

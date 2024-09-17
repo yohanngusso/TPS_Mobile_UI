@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="menu">
+        <div class="menu-toggle" id="menu-toggle">
+            <img src="/src/assets/images/cardapio.svg" alt="Menu">
+        </div>
+        <nav class="menu-items" id="menu-items">
+            <a href="#">Produtos</a>
+            <a href="#">Relacionados</a>
+            <a href="#">Comentarios</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="product-details">
+            <div class="product-images">
+                <img src="/src/assets/images/produto1.jpg" alt="Produto Principal" class="main-image">
+                <div class="thumbnail-images">
+                    <img src="/src/assets/images/produto2.jpg" alt="Produto Thumbnail">
+                    <img src="/src/assets/images/produto3.jpg" alt="Produto Thumbnail">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>Nome do Produto</h1>
+                <p class="price">R$ 8,90</p>
+                <p class="description">Coca-cola não existe melhor hora com esse produto que um almoço de domingo de um dia quente.</p>
+                <ul class="specifications">
+                    <li>Refrescante</li>
+                    <li>Doce</li>
+                    <li>Melhor gelado</li>
+                </ul>
+            </div>
+        </section>
+        <section class="related-products">
+            <h2>Produtos Relacionados</h2>
+            <div class="related-item">
+                <img src="/src/assets/images/relacionado1.jpg" alt="Produto Relacionado">
+                <p>Fanta-Laranja</p>
+                <p class="price">R$ 5,00</p>
+            </div>
+            <div class="related-item">
+                <img src="/src/assets/images/relacionado2.jpg" alt="Produto Relacionado">
+                <p>Fanta-Uva</p>
+                <p class="price">R$ 7,90</p>
+            </div>
+            <div class="related-item">
+                <img src="/src/assets/images/relacionado3.jpg" alt="Produto Relacionado">
+                <p>Sprite</p>
+                <p class="price">R$ 5,00</p>
+            </div>
+        </section>
+        <section class="comments">
+            <h2>Comentários</h2>
+            <div class="comment">
+                <p><strong>Usuário 1</strong> - 01/01/2023</p>
+                <p>Comentário do usuário sobre o produto.</p>
+            </div>
+            <div class="comment">
+                <p><strong>Usuário 2</strong> - 02/01/2023</p>
+                <p>Comentário do usuário sobre o produto.</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('menu-items').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

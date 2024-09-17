@@ -1,0 +1,25 @@
+.container {
+    padding: 0 20px;
+}
+
+.title {
+    font-size: clamp(24px, 4vw, 32px);
+    text-align: center;
+}
+
+.subtitle {
+    font-size: clamp(20px, 3.5vw, 28px);
+    text-align: center;
+}
+
+.subsubtitle {
+    font-size: clamp(18px, 3vw, 24px);
+    text-align: center;
+}
+
+.text {
+    font-size: clamp(16px, 2.5vw, 20px);
+    text-align: justify;
+    text-indent: 20px;
+    padding: 0 20px;
+}

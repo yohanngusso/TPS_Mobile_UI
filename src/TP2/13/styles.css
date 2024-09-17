@@ -1,0 +1,83 @@
+/* Estilos base (Mobile-first) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.question {
+    margin-bottom: 40px;
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.answer {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Layout horizontal para telas maiores */
+@media (min-width: 768px) {
+    .question {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .question h2 {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .options {
+        flex: 1;
+    }
+
+    .answer {
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* Ajuste de tamanho de texto conforme o viewport */
+@media (min-width: 320px) {
+    body {
+        font-size: calc(10px + 1vw);
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: calc(12px + 1vw);
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: calc(14px + 1vw);
+    }
+}
+
+/* Limite de tamanho de texto */
+body {
+    font-size: clamp(10px, 2vw, 30px);
+}
+
+/* Estilos para impressão */
+@media print {
+    .question {
+        display: block;
+    }
+}

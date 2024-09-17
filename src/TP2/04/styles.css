@@ -1,0 +1,37 @@
+body {
+    font-size: 100%; /* Define o tamanho da fonte base */
+}
+
+.content {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em; /* Tamanho do título relativo ao tamanho da fonte do body */
+}
+
+p {
+    font-size: calc(10px + 2vw); /* Tamanho responsivo da fonte */
+    max-width: 100%; /* Garante que o texto não ultrapasse a largura do viewport */
+    line-height: 1.5; /* Espaçamento entre linhas para melhor legibilidade */
+}
+
+/* Limites para o tamanho do texto */
+@media (min-width: 1500px) {
+    p {
+        font-size: 30px; /* Tamanho máximo da fonte */
+    }
+}
+
+@media (max-width: 500px) {
+    p {
+        font-size: 10px; /* Tamanho mínimo da fonte */
+    }
+}
+
+.responsive-image {
+    width: 100%; /* A imagem ocupa 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço em branco abaixo da imagem */
+    margin: 20px 0; /* Adiciona espaçamento acima e abaixo da imagem */
+}

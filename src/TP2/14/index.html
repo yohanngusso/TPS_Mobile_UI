@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="menu">
+        <div class="menu-toggle" id="menu-toggle">
+            <img src="/src/assets/images/cardapio.svg" alt="Menu">
+        </div>
+        <nav class="menu-items" id="menu-items">
+            <a href="#perfil">Perfil</a>
+            <a href="#fotos">Fotos</a>
+            <a href="#hobbies">Hobbies</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="perfil" class="profile">
+            <img src="/src/assets/images/foto_perfil.jpeg" alt="Minha Foto" class="profile-image">
+            <div class="profile-info">
+                <h1>Yohann Gusso</h1>
+                <p>Email: yohann.guedes@al.infnet.edu.br</p>
+            </div>
+        </section>
+        <section id="fotos" class="personal-info">
+            <h2>Informações Pessoais</h2>
+            <p>Tenho 24 anos, estudante de Engenharia de Software com 3 anos de experiência em assistência técnica, especializado em Manutenção em computadores, onde desenvolvi habilidades de comunicação e organização.</p>
+        </section>
+        <section id="hobbies" class="hobbies">
+            <h2>Hobbies</h2>
+            <div class="hobby">
+                <img src="/src/assets/images/gamer.jpg" alt="Gamer" class="hobby-image">
+                <p>Gamer</p>
+            </div>
+            <div class="hobby">
+                <img src="/src/assets/images/programador.jpg" alt="Programador" class="hobby-image">
+                <p>Programador</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('menu-items').classList.toggle('active');
+        });
+
+        document.querySelectorAll('.menu-items a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+/* Estilos base (Mobile-first) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+}
+
+.menu-toggle img {
+    width: 30px;
+    height: 30px;
+}
+
+.menu-items {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 10px;
+    z-index: 20;
+}
+
+.menu-items a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-items.active {
+    display: flex;
+}
+
+.video-highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px; /* Adicionado espaçamento inferior */
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+.main-video {
+    width: 100%;
+    max-width: 600px;
+}
+
+.video-menu {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.video-menu button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.video-menu button:hover {
+    background-color: #0056b3;
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.advertisement {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.advertisement img {
+    width: 100%;
+    max-width: 728px;
+}
+
+.related-videos {
+    margin-top: 40px;
+}
+
+.related-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.related-item img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.comments {
+    margin-top: 40px;
+}
+
+.comment {
+    margin-bottom: 20px;
+}
+
+/* Layout para dispositivos maiores */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-items {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        width: auto;
+        padding: 0;
+    }
+
+    .menu-items a {
+        color: #fff;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os elementos dentro do container */
+        max-width: 1200px; /* Aumentado para dispositivos maiores */
+    }
+
+    .video-highlight {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 40px; /* Adicionado espaçamento inferior */
+        margin: 0 auto; /* Centraliza a seção */
+    }
+
+    .main-video {
+        max-width: 800px;
+    }
+
+    .video-menu {
+        justify-content: center;
+    }
+
+    .description {
+        margin-top: 20px;
+        max-width: 800px; /* Limitar largura da descrição */
+    }
+
+    .related-videos {
+        display: flex;
+        flex-wrap: wrap; /* Permitir que os itens relacionados se ajustem em várias linhas */
+        gap: 20px; /* Espaçamento entre itens relacionados */
+        margin-top: 60px; /* Aumentado espaçamento superior */
+    }
+
+    .related-item {
+        flex-direction: column;
+        align-items: center;
+        width: calc(33.333% - 20px); /* Três itens por linha com espaçamento */
+        margin-bottom: 20px;
+    }
+
+    .related-item img {
+        width: 100%;
+        height: auto;
+        max-width: 200px; /* Aumentado tamanho máximo das imagens */
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .comments {
+        width: 100%;
+        margin-top: 60px; /* Aumentado espaçamento superior */
+    }
+
+    .comment {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilos para esquema de cores dark */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    .menu {
+        background-color: #1e1e1e;
+    }
+
+    .menu-items {
+        background-color: #1e1e1e;
+    }
+
+    .video-menu button {
+        background-color: #007bff;
+    }
+
+    .video-menu button:hover {
+        background-color: #0056b3;
+    }
+}

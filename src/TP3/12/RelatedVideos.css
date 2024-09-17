@@ -1,0 +1,27 @@
+.related-videos {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.videos-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 50px;
+    height: 50px;
+}
+
+.video-info {
+    flex: 1;
+}

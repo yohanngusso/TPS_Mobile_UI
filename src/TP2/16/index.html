@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Vídeos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="menu">
+        <div class="menu-toggle" id="menu-toggle">
+            <img src="/src/assets/images/cardapio.svg" alt="Menu">
+        </div>
+        <nav class="menu-items" id="menu-items">
+            <a href="#">Home</a>
+            <a href="#">Vídeos</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="video-highlight">
+            <video controls class="main-video">
+                <source src="/src/assets/videos/video.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <h1>Exercício Python #002 - Respondendo ao Usuário</h1>
+            <p class="author">Curso em Vídeo</p>
+            <div class="video-menu">
+                <button>Curtir</button>
+                <button>Compartilhar</button>
+                <button>Salvar</button>
+                <button>Denunciar</button>
+            </div>
+            <p class="description">Exercício Python 002: Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas-vindas.
+
+                <br>Gostou da aula? Então torne-se um Gafanhoto APOIADOR do Curso em Vídeo acessando o site cursoemvideo.com/apoie
+                
+                <br>Aula do Curso de Python criado pelo professor Gustavo Guanabara para o portal CursoemVideo.com.</p>
+        </section>
+        <section class="advertisement">
+            <img src="/src/assets/images/propaganda.jpg" alt="Propaganda">
+        </section>
+        <section class="related-videos">
+            <h2>Vídeos Relacionados</h2>
+            <div class="related-item">
+                <img src="/src/assets/images/thumbnail1.jpg" alt="Vídeo Relacionado">
+                <p>Curso Python #01 - Seja um Programador</p>
+                <p class="author">Curso em Vídeo</p>
+            </div>
+            <div class="related-item">
+                <img src="/src/assets/images/thumbnail2.jpg" alt="Vídeo Relacionado">
+                <p>Curso Python #02 - Para que serve o Python?</p>
+                <p class="author">Curso em Vídeo</p>
+            </div>
+            <div class="related-item">
+                <img src="/src/assets/images/thumbnail3.jpg" alt="Vídeo Relacionado">
+                <p>Curso Python #17 - Listas (Parte 2)</p>
+                <p class="author">Curso em Vídeo</p>
+            </div>
+        </section>
+        <section class="comments">
+            <h2>Comentários</h2>
+            <div class="comment">
+                <p><strong>Usuário 1</strong> - 01/01/2023</p>
+                <p>Comentário do usuário sobre o vídeo.</p>
+            </div>
+            <div class="comment">
+                <p><strong>Usuário 2</strong> - 02/01/2023</p>
+                <p>Comentário do usuário sobre o vídeo.</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('menu-items').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

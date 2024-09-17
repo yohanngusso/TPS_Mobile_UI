@@ -1,0 +1,18 @@
+.video-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.ad-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}

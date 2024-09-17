@@ -1,0 +1,152 @@
+/* Estilos base (Mobile-first) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+}
+
+.menu-toggle img {
+    width: 30px;
+    height: 30px;
+}
+
+.menu-items {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 10px;
+}
+
+.menu-items a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-items.active {
+    display: flex;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-image {
+    width: 184px;
+    height: 159px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    margin-top: 10px;
+}
+
+.personal-info, .hobbies {
+    margin-top: 20px;
+}
+
+.hobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hobby-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Layout para dispositivos maiores */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-items {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        width: auto;
+        padding: 0;
+    }
+
+    .menu-items a {
+        color: #fff;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        width: 100%;
+    }
+
+    .profile-image {
+        margin-right: 20px;
+    }
+
+    .profile-info {
+        margin-top: 0;
+    }
+
+    .hobbies {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hobbies .hobby {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .hobby-image {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}

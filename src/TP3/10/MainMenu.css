@@ -1,0 +1,11 @@
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-menu li {
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin-bottom: 5px;
+    text-align: center;
+}

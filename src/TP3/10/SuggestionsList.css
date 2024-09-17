@@ -1,0 +1,23 @@
+.suggestions-list {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.suggestion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.suggestion-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.suggestion-info {
+    flex: 1;
+}

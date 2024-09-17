@@ -1,0 +1,21 @@
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+}
+
+.post-content {
+    margin-top: 10px;
+}
+
+.post-comments {
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
